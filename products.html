@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styleprodukty.css">
+    <title>Sklep JS</title>
+
+</head>
+
+<body>
+    <header>
+        <nav id="borderbottom" class="navbar navbar-expand-xl navbar-dark fixed-top">
+            <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarText">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <span class="navbar-brand d-flex"><a class="navbar-brand" href="#"><img src="images/logo.png" alt=""
+                        class="logo">
+                </a></span>
+
+
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-center h-100" href="index.html">GŁÓWNA <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center active h-100" href="products.html">PRODUKTY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center h-100" href="product.html">PRODUKT</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="navbar-side">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="koszyk.html">
+                            <div class="text-center">
+                                <img src="images/shopping-cart-solid.svg" class="cart">
+                                <span class="badge" id="js-item-count">1</span>
+                                </img>
+                            </div>
+                            <div class="price text-center">
+                                <p class='text-center'>199,99 zł</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div class="text-center">
+                                <img src="images/user-solid.svg" class="cart">
+                            </div>
+                            <div class="text-center">
+                                <span>Twoje konto</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- nav -->
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-10">
+                <div class="row align-items-baseline">
+                    <ol class="d-flex col-6 col-md-4 col-lg-6">
+                        <li class="breadcrumb-item"><a href="#">Verticum</a></li>
+                        <li class="breadcrumb-item"><a href="#">Produkty</a></li>
+
+                    </ol>
+                    <div class="input-field first" id="first">
+                        <div class="btn-group" role="group">
+                            <input type="text" class="form-control" placeholder="Wyszukaj">
+                            <button class="btn btn-verticum">
+                                <img src="images/svg/search.svg" alt="search icon" style="width: 1em;">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-verticum dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sortuj według
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Cena (rosnąco)</a>
+                            <a class="dropdown-item" href="#">Cena (malejąco)</a>
+                            <a class="dropdown-item" href="#">Popularność(rosnąco)</a>
+                            <a class="dropdown-item" href="#">Popularność(malejąco)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="product-list">
+                    <a href='product.html' class='card-link col-6 col-md-4 col-lg-3'>
+                        <div class='card'><img class='card-img-top' src='images/products/0.jpg' alt='Card image cap'>
+                            <div class='card-body'>
+                                <h5 class='card-title'>Komputer szybki</h5>
+                                <p class='manufacturer'>Samsung inc.</p>
+                                <p class='new-price'>3990,00 zł</p><input type='button' class='btn btn-verticum'
+                                    value='Dodaj do koszyka'>
+                            </div>
+                        </div>
+                    </a>
+                    <a href='product.html' class='card-link col-6 col-md-4 col-lg-3'>
+                        <div class='card'><img class='card-img-top' src='images/products/1.jpg' alt='Card image cap'>
+                            <div class='card-body'>
+                                <h5 class='card-title'>Szybkie Kostki RAM</h5>
+                                <p class='manufacturer'>GOODRAM</p>
+                                <p class='new-price'>399 zł</p><input type='button' class='btn btn-verticum'
+                                    value='Dodaj do koszyka'>
+                            </div>
+                        </div>
+                    </a>
+                    <a href='product.html' class='card-link col-6 col-md-4 col-lg-3'>
+                        <div class='card'><img class='card-img-top' src='images/products/2.jpg' alt='Card image cap'>
+                            <div class='card-body'>
+                                <h5 class='card-title'>Gamingowa klawiatura</h5>
+                                <p class='manufacturer'>Razor</p>
+                                <p class='new-price'>390,00 zł</p><input type='button' class='btn btn-verticum'
+                                    value='Dodaj do koszyka'>
+                            </div>
+                        </div>
+                    </a>
+                    <a href='product.html' class='card-link col-6 col-md-4 col-lg-3'>
+                        <div class='card'><img class='card-img-top' src='images/products/3.jpg' alt='Card image cap'>
+                            <div class='card-body'>
+                                <h5 class='card-title'>GTX 2090 Ti</h5>
+                                <p class='manufacturer'>GIGABYTE</p>
+                                <p class='new-price'>3999,00 zł</p><input type='button' class='btn btn-verticum'
+                                    value='Dodaj do koszyka'>
+                            </div>
+                        </div>
+                    </a>
+                    <a href='product.html' class='card-link col-6 col-md-4 col-lg-3'>
+                        <div class='card'><img class='card-img-top' src='images/products/4.jpg' alt='Card image cap'>
+                            <div class='card-body'>
+                                <h5 class='card-title'>Gamingowy router</h5>
+                                <p class='manufacturer'>Spiky boi</p>
+                                <p class='new-price'>120 zł</p><input type='button' class='btn btn-verticum'
+                                    value='Dodaj do koszyka'>
+                            </div>
+                        </div>
+                    </a>
+                    <a href='product.html' class='card-link col-6 col-md-4 col-lg-3'>
+                        <div class='card'><img class='card-img-top' src='images/products/0.jpg' alt='Card image cap'>
+                            <div class='card-body'>
+                                <h5 class='card-title'>Komputer szybki</h5>
+                                <p class='manufacturer'>Samsung inc.</p>
+                                <p class='new-price'>3990,00 zł</p><input type='button' class='btn btn-verticum'
+                                    value='Dodaj do koszyka'>
+                            </div>
+                        </div>
+                    </a>
+                    <a href='product.html' class='card-link col-6 col-md-4 col-lg-3'>
+                        <div class='card'><img class='card-img-top' src='images/products/1.jpg' alt='Card image cap'>
+                            <div class='card-body'>
+                                <h5 class='card-title'>Szybkie Kostki RAM</h5>
+                                <p class='manufacturer'>GOODRAM</p>
+                                <p class='new-price'>399 zł</p><input type='button' class='btn btn-verticum'
+                                    value='Dodaj do koszyka'>
+                            </div>
+                        </div>
+                    </a>
+                    <a href='product.html' class='card-link col-6 col-md-4 col-lg-3'>
+                        <div class='card'><img class='card-img-top' src='images/products/2.jpg' alt='Card image cap'>
+                            <div class='card-body'>
+                                <h5 class='card-title'>Gamingowa klawiatura</h5>
+                                <p class='manufacturer'>Razor</p>
+                                <p class='new-price'>390,00 zł</p><input type='button' class='btn btn-verticum'
+                                    value='Dodaj do koszyka'>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="d-none col-lg-2 d-lg-flex  add">
+                <h3>REKLAMA</h3>
+            </div>
+        </div>
+
+    </div>
+    <footer class="page-footer font-small stylish-color-dark pt-4 mt-4" id="footer">
+
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-md-4 mx-auto">
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Prawa Autorskie</h5>
+                    <p>Treść znajdująca się w witrynie może zostać wykorzystana w dowolny sposób w celach
+                        edukacyjnych.
+                    </p>
+                </div>
+                <hr class="clearfix w-100 d-md-none">
+                <div class="col-md-2 mx-auto">
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Verticum</h5>
+
+                    <ul class="list-unstyled">
+                        <li><a href="#!">O nas</a></li>
+                        <li><a href="#!">Współpraca</a></li>
+                        <li><a href="#!">Forum</a></li>
+                        <li><a href="#!">Kariera</a></li>
+                        <li><a href="#!">Kontakt</a></li>
+
+                </div>
+
+                <div class="col-md-2 mx-auto">
+
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Promocje</h5>
+
+                    <ul class="list-unstyled">
+                        <li><a href="#!">Wyprzedaż</a></li>
+                        <li><a href="#!">Promocje</a></li>
+                        <li><a href="#!">Aktualności</a></li>
+                        <li><a href="#!">Poradniki</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-md-2 mx-auto">
+
+
+
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Zamówienia</h5>
+
+                    <ul class="list-unstyled">
+                        <li><a href="#!">Reklamacje i zwroty</a></li>
+                        <li><a href="#!">Ubezpieczenia</a></li>
+                        <li><a href="#!">Dostawa</a></li>
+                        <li><a href="#!">Leasing</a></li>
+                        <li><a href="#!">Montaż</a></li>
+                    </ul>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">© 2020 Denis Poczęty
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

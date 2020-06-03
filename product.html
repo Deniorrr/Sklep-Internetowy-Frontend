@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Denis Poczęty">
+  <title>VerticumShop.pl</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="styleprodukt.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="images/favicon.png">
+</head>
+
+<body>
+  <header>
+    <nav id="borderbottom" class="navbar navbar-expand-xl navbar-dark fixed-top">
+      <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarText">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <span class="navbar-brand d-flex"><a class="navbar-brand" href="#"><img src="images/logo.png" alt="" class="logo">
+        </a></span>
+
+
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link text-center h-100" href="index.html">GŁÓWNA <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center h-100" href="products.html">PRODUKTY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center active h-100" href="product.html">PRODUKT</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="navbar-side">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item nav-icon">
+            <a class="nav-link" href="koszyk.html">
+              <div class="text-center">
+                <img src="images/shopping-cart-solid.svg" class="cart">
+                <span class="badge" id="js-item-count">1</span>
+
+              </div>
+              <div class="price text-center">
+                <p class='text-center'>199,99 zł</p>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item nav-icon">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLoginForm">
+              <div class="text-center">
+                <img src="images/user-solid.svg" class="cart">
+              </div>
+              <div class="text-center">
+                <span>Twoje konto</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <form action="index.html" type="post">
+          <div class="modal-header text-center">
+            <h4 class="modal-title w-100 font-weight-bold">Zaloguj się</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body mx-3">
+            <div class="md-form mb-5">
+
+              <input type="email" id="defaultForm-email" class="form-control validate">
+              <label data-error="wrong" data-success="right" for="defaultForm-email">E-mail</label>
+            </div>
+
+            <div class="md-form mb-4">
+              <input type="password" id="defaultForm-pass" class="form-control validate">
+              <label data-error="wrong" data-success="right" for="defaultForm-pass">Hasło</label>
+            </div>
+            <div class="text-right">
+              <a href="#">Zarejestruj się</a>
+            </div>
+
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button class="btn btn-default">Login</button>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+
+    <ol class="d-flex">
+      <li class="breadcrumb-item"><a href="#">Produkty</a></li>
+      <li class="breadcrumb-item"><a href="#">Desktopy</a></li>
+      <li class="breadcrumb-item">Komputer do gier</li>
+    </ol>
+
+
+    <div class="row">
+
+
+      <div class="col-md-7 d-flex product-image">
+        <figure><img src="images/products/old_computer.jpg" class=" w-100" alt="XD"></figure>
+      </div>
+      <div class="col-md-5 ">
+        <h2>Verticum model-X i5-9400F/16GB/480/W10X/GTX1660</h2>
+
+        <div class="card">
+          <div class="card-body  text-right">
+            <h2 class="card-text">3999,99 zł</h2>
+            <div class="d-flex justify-content-end align-items-center">
+              <p><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span>4.0</span></p>
+
+            </div>
+            <div class="form-row">
+              <select class="form-control form-group col-md-2" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+              <a href="#" class="btn btn-primary form-group col-md-10">Dodaj do koszyka</a>
+            </div>
+
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <h5 class='font-weight-bold'>GTX 1660</h5>
+              <h6>6GB, GDDR5</h6>
+            </li>
+            <li class="list-group-item">
+              <h5 class='font-weight-bold'>INTEL CORE I5</h5>
+              <h6>2.9 GHz, 6 rdzeni</h6>
+            </li>
+            <li class="list-group-item">
+              <h5 class='font-weight-bold'>16GB DDR4</h5>
+              <h6>2666 MHz, CL16</h6>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h2 class="p-2 col-12 border_bottom">Opis</h2>
+      <div class="col-md-4 icon d-flex">
+        <img src="images/svg/gamepad.svg" alt="">
+      </div>
+      <div class="col-md-8">
+        <h3>IDEALNE DO GAMINGU</h3>
+        <p>Wydajność komputera gwarantuje płynną rozgrywkę oraz wysoki poziom fps-ów, ułatwiając zdobywanie cennego
+          doświadczenia, jak i budowanie tożsamości gracza.
+        </p>
+      </div>
+      <div class="col-md-4 icon d-flex">
+        <img src="images/svg/cpu-tower.svg" alt="">
+      </div>
+      <div class="col-md-8">
+        <h3>OGROMNA MOC OBLICZENIOWA</h3>
+        <p>Sześć rdzeni procesora gwarantują ogromną moc, która rozprawi się z każdą
+          grą. Zyskasz też tryb zwiększający taktowanie zegara. Odblokuj swój potencjał
+          i zaskocz przeciwnika.
+        </p>
+      </div>
+      <div class="col-md-4 icon d-flex">
+        <img src="images/svg/drive.svg" alt="">
+      </div>
+      <div class="col-md-8">
+        <h3>POJEMNE DYSKI NA SYSTEM I GRY</h3>
+        <p>Na dysku twardym HDD pomieścisz całą bibliotekę gier, a dzięki dyskowi SSD zachowasz szybki
+          dostęp do każdej z nich. Jeśli na polu bitwy coś pójdzie źle, to już po chwili ponownie załadujesz grę i
+          wrócisz wyrównać rachunki.
+        </p>
+      </div>
+      <h2 class="mt-4">Specyfikacja</h2>
+
+      <table class="table border_bottom">
+
+        <tr>
+          <td>Procesor</td>
+          <td>Intel Core i5-9400F (6 rdzeni, od 2.90 GHz do 4.10 GHz, 9 MB cache)</td>
+        </tr>
+        <tr>
+          <td>Chipset</td>
+          <td>Intel B360</td>
+        </tr>
+        <tr>
+          <td>Pamięć RAM</td>
+          <td>16 GB (DIMM DDR4, 2666 MHz)</td>
+        </tr>
+        <tr>
+          <td>Karta graficzna</td>
+          <td>NVIDIA GeForce GTX 1660</td>
+        </tr>
+        <tr>
+          <td>Dysk SSD PCIe</td>
+          <td>480 GB</td>
+        </tr>
+        <tr>
+          <td>Łączność</td>
+          <td>LAN 10/100/1000 Mbps</td>
+        </tr>
+        <tr>
+          <td>Zasilacz</td>
+          <td>500 W</td>
+        </tr>
+        <tr>
+          <td>Rodzaje wejść / wyjść - panel tylny</td>
+          <td>USB 2.0 - 4 szt.<br>
+            USB 3.1 Gen. 1 (USB 3.0) - 2 szt.<br>
+            USB 3.1 Gen. 2 - 2 szt.<br>
+            Wejście/wyjścia audio - 3 szt.<br>
+            RJ-45 (LAN) - 1 szt.<br>
+            VGA (D-sub) - 1 szt.<br>
+            DVI-D - 1 szt.<br>
+            HDMI - 1 szt.<br>
+            HDMI (karta graficzna) - 1 szt.<br>
+            Display Port (karta graficzna) - 3 szt.<br>
+            PS/2 Combo - 1 szt.<br>
+            AC-in (wejście zasilania) - 1 szt.</td>
+        </tr>
+        <tr>
+          <td>Łączność</td>
+          <td>LAN 10/100/1000 Mbps</td>
+        </tr>
+
+      </table>
+    </div>
+
+  </div>
+  <!-- Footer -->
+  <footer class="page-footer font-small stylish-color-dark pt-4 mt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-4 mx-auto">
+
+          <!-- Content -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Prawa Autorskie</h5>
+          <p>Treść znajdująca się w witrynie może zostać wykorzystana w dowolny sposób w celach edukacyjnych.
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Verticum</h5>
+
+          <ul class="list-unstyled">
+            <li><a href="#!">O nas</a></li>
+            <li><a href="#!">Współpraca</a></li>
+            <li><a href="#!">Forum</a></li>
+            <li><a href="#!">Kariera</a></li>
+            <li><a href="#!">Kontakt</a></li>
+
+        </div>
+
+        <div class="col-md-2 mx-auto">
+
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Promocje</h5>
+
+          <ul class="list-unstyled">
+            <li><a href="#!">Wyprzedaż</a></li>
+            <li><a href="#!">Promocje</a></li>
+            <li><a href="#!">Aktualności</a></li>
+            <li><a href="#!">Poradniki</a></li>
+
+          </ul>
+
+        </div>
+
+        <div class="col-md-2 mx-auto">
+
+
+
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Zamówienia</h5>
+
+          <ul class="list-unstyled">
+            <li><a href="#!">Reklamacje i zwroty</a></li>
+            <li><a href="#!">Ubezpieczenia</a></li>
+            <li><a href="#!">Dostawa</a></li>
+            <li><a href="#!">Leasing</a></li>
+            <li><a href="#!">Montaż</a></li>
+          </ul>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3">© 2020 Denis Poczęty
+    </div>
+  </footer>
+  <script>
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+        document.getElementById("borderbottom").style.boxShadow = "0px 0px 10px 0px #121212";
+        document.getElementById("borderbottom").style.opacity = 0.95;
+      } else {
+        document.getElementById("borderbottom").style.boxShadow = "none";
+        document.getElementById("borderbottom").style.opacity = 1;
+      }
+    }
+  </script>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

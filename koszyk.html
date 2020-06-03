@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylekoszyk.css">
+    <title>Sklep JS</title>
+
+</head>
+
+<body>
+    <header>
+        <nav id="borderbottom" class="navbar navbar-expand-xl navbar-dark fixed-top">
+            <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarText">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <span class="navbar-brand d-flex"><a class="navbar-brand" href="#"><img src="images/logo.png" alt=""
+                        class="logo">
+                </a></span>
+
+
+            <div class="collapse navbar-collapse " id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-center h-100" href="index.html">GŁÓWNA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center h-100" href="products.html">PRODUKTY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center h-100" href="product.html">PRODUKT</a>
+                    </li>
+                </ul>
+                </ul>
+            </div>
+
+            <div class="navbar-side">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="koszyk.html">
+                            <div class="text-center">
+                                <img src="images/shopping-cart-solid.svg" class="cart">
+                                <span class="badge" id="js-item-count">5</span>
+                                </img>
+                            </div>
+                            <div class="price text-center">
+                                <p class='text-center'>199,99 zł</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div class="text-center">
+                                <img src="images/user-solid.svg" class="cart">
+                            </div>
+                            <div class="text-center">
+                                <span>Twoje konto</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="kontener" id="kontener">
+        <div class="lewo">
+            <h3>
+                Koszyk (9)
+            </h3>
+            <table class="koszyk">
+                <tr>
+                    <th colspan="2">
+                        <h5>Produkt</h5>
+                    </th>
+                    <th>
+                        <h5>Cena</h5>
+                    </th>
+                    <th>
+                        <h5>Ilość</h5>
+                    </th>
+                </tr>
+                <tr>
+                    <td><img src="images/products/0.jpg" alt="0"></td>
+                    <td>Lenovo Legion Y540‑17 i7‑9750H/16GB/960 GTX1660Ti</td>
+                    <td>2999,00 zł</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td><img src="images/products/1.jpg" alt="0"></td>
+                    <td>G.SKILL 16GB (2x8GB) 3000MHz CL16 Trident Z RGB LED</td>
+                    <td>459,00 zł</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td><img src="images/products/2.jpg" alt="0"></td>
+                    <td>Logitech K120 Keyboard czarna USB</td>
+                    <td>59,00 zł</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td><img src="images/products/3.jpg" alt="0"></td>
+                    <td>ASUS GeForce GT 710 Silent 1GB GDDR5</td>
+                    <td>1499,00 zł</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td><img src="images/products/4.jpg" alt="0"></td>
+                    <td>SPIKYBOI (5300Mb/s a/b/g/n/ac, 2xUSB, QAM)</td>
+                    <td>139,00 zł</td>
+                    <td>1</td>
+                </tr>
+            </table>
+
+        </div>
+        <div class="prawo">
+            <h3>Suma: 5 155,00 zł</h3>
+            <button class="przejdz" onclick="cos()">przejdź do dostawy</button>
+        </div>
+        <div class="kk">
+            <div class="doll" id="lul">
+                <input type="text" placeholder="imie"> <br>
+                <input type="text" placeholder="nazwisko"><br>
+                <input type="text" placeholder="telefon"><br>
+                <input type="text" placeholder="adres zamieszkania"><br>
+                <input type="text" placeholder="44" class="a44"> - <input type="text" placeholder="100" class="a44"><br>
+
+
+            </div>
+            <div class="dolll" id="lul2">
+                <button class="przejdz">ZAMAWIAM I PŁACĘ</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="gora">
+            <div class="footer responsive">
+                <p>Treść znajdująca się w witrynie może zostać wykorzystana w dowolny sposób w celach
+                    edukacyjnych.
+                </p>
+                <ul class="list-unstyled">
+                    <li><a href="#!">O nas</a></li>
+                    <li><a href="#!">Współpraca</a></li>
+                    <li><a href="#!">Forum</a></li>
+                    <li><a href="#!">Kariera</a></li>
+                    <li><a href="#!">Kontakt</a></li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li><a href="#!">Wyprzedaż</a></li>
+                    <li><a href="#!">Promocje</a></li>
+                    <li><a href="#!">Aktualności</a></li>
+                    <li><a href="#!">Poradniki</a></li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li><a href="#!">Reklamacje i zwroty</a></li>
+                    <li><a href="#!">Ubezpieczenia</a></li>
+                    <li><a href="#!">Dostawa</a></li>
+                    <li><a href="#!">Leasing</a></li>
+                    <li><a href="#!">Montaż</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="dol">
+            <p>© 2020 Denis Poczęty</p>
+        </div>
+    </footer>
+    <script src="cos.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
