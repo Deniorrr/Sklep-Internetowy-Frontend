@@ -2,9 +2,12 @@
 My project of an online shop design
 
 ## Table of contents
+* [Link](#link)
 * [General info](#general-info)
-* [Setup](#setup)
 * [Author](#author)
+
+## Link
+https://deniorrr.github.io/Sklep-Internetowy-Frontend/
 
 ## General info
 This project is a Online Shop design created in Bootstrap.
