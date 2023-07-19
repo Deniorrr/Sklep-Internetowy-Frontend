@@ -12,10 +12,8 @@ It contains:
 - main store page
 - page with many products
 - page with one selected product
-- Basket with 
+- Basket
 
-## Setup
-To run the project download the repo and start up "index.html"
 
 ## Author
 Denis Poczęty 
