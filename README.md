@@ -17,6 +17,6 @@ It contains:
 - page with one selected product
 - Basket
 
-
+Worth mentioning that it's a project from a few years ago, so there may be some weird "features".
 ## Author
 Denis Poczęty 
